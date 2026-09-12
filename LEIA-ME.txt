@@ -1,8 +1,24 @@
-TIME SERRA - FINAL SEM BOX
+TIME SERRA - VERSAO FINAL / MISSAO DE 60 SEGUNDOS
 
-Extraia o ZIP e abra index.html no navegador.
-As imagens e a musica ja estao incorporadas no HTML.
-Clique em JOGAR para liberar o audio. A trilha toca em loop.
+Extraia o ZIP e abra index.html no navegador. Todas as imagens e a musica
+ja estao incorporadas: o HTML funciona sozinho, sem servidor ou internet.
+As pastas assets e audio sao copias dos recursos para futuras edicoes.
 
-Alteracao: removidos os boxes extras dos numeros no jogo,
-no painel e no resultado exportado. PNGs originais preservados.
+Ajustes desta versao:
+- Plataforma solida ate o rodape; equipe e piso reposicionados na capa,
+  no resultado e no placar exportado.
+- Removidos os textos solicitados; cargo e mensagem de prontidao por piloto.
+- Missao de 60 segundos de jogo ativo, iguais para os 5 pilotos.
+- Contador regressivo e total de meteoros destruidos.
+- Pausa congela o tempo e a musica. Colisoes interrompem os disparos por
+  0,65 s, mas nao eliminam antes dos 60 s. Nao ha desconto de pontos.
+- Recorde separado do modo antigo, que permitia partidas mais longas.
+- Musica oficial em loop, efeitos, artes aprovadas e numeros sem box mantidos.
+
+No computador: setas ou A/D. P ou Esc: pausa. Espaco: disparo manual.
+No celular: arraste ou use os botoes. O disparo automatico inicia ligado.
+O audio comeca apos o primeiro toque/clique, conforme a permissao do navegador.
+
+A duracao de 60 s nao inclui a contagem de decolagem de 3 s nem as pausas.
+O navegador mantem a barra de endereco; apenas a etiqueta de versao foi
+removida do jogo. Nenhuma publicacao externa foi realizada.

@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#080d22">
 <meta name="description" content="Time Serra: um arcade vertical de foguetes. Escolha seu piloto, destrua meteoros e complete o trio.">
-<title>Time Serra - Decolagem</title>
+<title>Time Serra</title>
 <style>
 :root{color-scheme:dark;--night:#080d22;--green:#b5fc44;--purple:#8655fa;--ink:#142a33;--white:#f5f9ff}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{background:#060b1b;color:var(--white);font-family:Arial,Helvetica,sans-serif;overscroll-behavior:none;-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;color:inherit;touch-action:manipulation}button:focus-visible{outline:4px solid #fff;outline-offset:5px}button:disabled{cursor:wait;opacity:.6}button,canvas{-webkit-user-select:none;user-select:none}#app{height:100%;display:flex;align-items:center;justify-content:center;gap:54px;padding:18px;isolation:isolate}#app:before{content:"";position:fixed;z-index:-1;inset:0;background:radial-gradient(ellipse at 65% 42%,#192149 0,transparent 57%),linear-gradient(110deg,#060b1b,#0b1329)}.desktop-note{width:252px;flex:none}.overline{font:700 11px/1.6 "Courier New",monospace;letter-spacing:3px;color:#b5fc44}.desktop-note h1{font-size:52px;line-height:.99;letter-spacing:-3px;margin:20px 0 22px;font-weight:900}.desktop-note h1 span{color:#b5fc44}.desktop-note p{color:#a9b5cc;font-size:15px;line-height:1.7}.desktop-note .line{width:34px;height:3px;background:#8551fa;margin:28px 0}.key-line{display:flex;gap:7px;align-items:center;margin:12px 0;font-size:12px;color:#abb8d0}kbd{min-width:28px;padding:7px 8px;display:inline-block;text-align:center;background:#172039;border:1px solid #34405b;box-shadow:0 3px #020612;border-radius:5px;color:#fff;font:700 12px monospace}.note-small{font:11px/1.8 "Courier New",monospace!important;color:#7383a4!important;margin-top:32px}
-#viewport{position:relative;flex:none;overflow:hidden;box-shadow:0 24px 100px #000a,0 0 0 1px #7b8ac529;background:#080d22;border-radius:16px}#stage{position:absolute;width:540px;height:960px;transform-origin:0 0;overflow:hidden;isolation:isolate;touch-action:none;background:#071125}#world{display:block;width:540px;height:960px;image-rendering:pixelated;touch-action:none}.scanlines{position:absolute;inset:0;pointer-events:none;z-index:2;background:repeating-linear-gradient(0deg,#00000005 0,#00000005 1px,transparent 1px,transparent 4px);opacity:.45}.screen{position:absolute;inset:0;z-index:5;display:none}.screen.active{display:block}.logo{position:absolute;left:50%;transform:translateX(-50%);object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 10px 0 #050a2433)}.home-logo{top:51px;width:440px;height:230px}.tagline{position:absolute;top:294px;width:100%;text-align:center;font:900 24px/1.25 "Courier New",monospace;letter-spacing:1px;margin:0;text-shadow:0 3px #062041}.home-desc{position:absolute;top:330px;left:30px;right:30px;margin:0;text-align:center;color:#e8f2ff;font-size:16px;line-height:1.5}.home-pilot{position:absolute;top:555px;width:100%;text-align:center;font:700 12px monospace;letter-spacing:2px;color:#cdefff}.home-pilot strong{display:block;color:#fff;font-size:17px;margin-top:5px;letter-spacing:.5px}.btn{position:relative;display:flex;justify-content:center;align-items:center;gap:15px;background:#acfa39;color:#12321c;border:3px solid #d8ff88;box-shadow:inset 0 -5px #75cc25,0 7px 0 #34541b,0 11px 0 #061225;min-height:64px;font:900 22px/1 "Courier New",monospace;letter-spacing:.5px;text-transform:uppercase;border-radius:9px;text-shadow:0 1px #edffb34d;transition:filter .12s,transform .12s}.btn:hover{filter:brightness(1.08)}.btn:active{transform:translateY(5px);box-shadow:inset 0 -2px #75cc25,0 2px #34541b,0 5px #061225}.btn svg{width:26px;height:26px;fill:currentColor}.btn.secondary{background:#352362;border:2px solid #896bd0;color:#fff;box-shadow:inset 0 -4px #251747,0 5px 0 #120c28;font-size:17px}.btn.ghost{background:#111d36da;color:#cbd7ed;border:2px solid #485a7d;box-shadow:0 4px #061020;font-size:15px}.home-play{position:absolute;top:823px;left:65px;width:410px;height:70px;font-size:30px}.home-footer{position:absolute;top:921px;width:100%;text-align:center;font:11px monospace;letter-spacing:1px;color:#c9d9ef}.version{position:absolute;left:20px;top:16px;font:10px monospace;color:#98bbd7;letter-spacing:1px}.icon-btn{width:50px;height:50px;background:#101c37e8;border:2px solid #55709080;box-shadow:0 3px #020916;border-radius:9px;display:flex;align-items:center;justify-content:center}.icon-btn svg{width:22px;height:22px;fill:currentColor}.menu-sound{position:absolute;top:19px;right:21px;z-index:9}.menu-sound.enabled{color:#b5fc44;border-color:#92d937}
+#viewport{position:relative;flex:none;overflow:hidden;box-shadow:0 24px 100px #000a,0 0 0 1px #7b8ac529;background:#080d22;border-radius:16px}#stage{position:absolute;width:540px;height:960px;transform-origin:0 0;overflow:hidden;isolation:isolate;touch-action:none;background:#071125}#world{display:block;width:540px;height:960px;image-rendering:pixelated;touch-action:none}.scanlines{position:absolute;inset:0;pointer-events:none;z-index:2;background:repeating-linear-gradient(0deg,#00000005 0,#00000005 1px,transparent 1px,transparent 4px);opacity:.45}.screen{position:absolute;inset:0;z-index:5;display:none}.screen.active{display:block}.logo{position:absolute;left:50%;transform:translateX(-50%);object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 10px 0 #050a2433)}.home-logo{top:51px;width:440px;height:230px}.tagline{position:absolute;top:294px;width:100%;text-align:center;font:900 24px/1.25 "Courier New",monospace;letter-spacing:1px;margin:0;text-shadow:0 3px #062041}.btn{position:relative;display:flex;justify-content:center;align-items:center;gap:15px;background:#acfa39;color:#12321c;border:3px solid #d8ff88;box-shadow:inset 0 -5px #75cc25,0 7px 0 #34541b,0 11px 0 #061225;min-height:64px;font:900 22px/1 "Courier New",monospace;letter-spacing:.5px;text-transform:uppercase;border-radius:9px;text-shadow:0 1px #edffb34d;transition:filter .12s,transform .12s}.btn:hover{filter:brightness(1.08)}.btn:active{transform:translateY(5px);box-shadow:inset 0 -2px #75cc25,0 2px #34541b,0 5px #061225}.btn svg{width:26px;height:26px;fill:currentColor}.btn.secondary{background:#352362;border:2px solid #896bd0;color:#fff;box-shadow:inset 0 -4px #251747,0 5px 0 #120c28;font-size:17px}.btn.ghost{background:#111d36da;color:#cbd7ed;border:2px solid #485a7d;box-shadow:0 4px #061020;font-size:15px}.home-play{position:absolute;top:823px;left:65px;width:410px;height:70px;font-size:30px}.icon-btn{width:50px;height:50px;background:#101c37e8;border:2px solid #55709080;box-shadow:0 3px #020916;border-radius:9px;display:flex;align-items:center;justify-content:center}.icon-btn svg{width:22px;height:22px;fill:currentColor}.menu-sound{position:absolute;top:19px;right:21px;z-index:9}.menu-sound.enabled{color:#b5fc44;border-color:#92d937}
 .select-logo{top:23px;width:298px;height:154px}.select-title{position:absolute;top:182px;width:100%;text-align:center;font:900 24px monospace;letter-spacing:1px;margin:0}.select-name{position:absolute;top:508px;width:100%;text-align:center;margin:0;font:900 26px monospace;color:#fff;text-shadow:0 3px #12233e}.select-hint{position:absolute;top:550px;width:100%;text-align:center;color:#dbe8ff;font-size:14px}.pilot-row{position:absolute;top:588px;left:20px;right:20px;display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.pilot-card{position:relative;height:149px;padding:9px 3px 6px;background:#101b34f2;border:2px solid #547491;border-bottom-width:5px;border-radius:9px;display:flex;align-items:center;flex-direction:column;gap:8px;transition:transform .14s,border-color .14s}.pilot-card img{width:75px;height:80px;object-fit:contain;image-rendering:pixelated}.pilot-card .pilot-label{font:700 11px/1.3 "Courier New",monospace;text-align:center;display:block;color:#e1ebfc;white-space:normal}.pilot-card[aria-pressed=true]{border-color:#c4ff55;background:#304a27;transform:translateY(-7px);box-shadow:0 0 28px #b0ee3533}.pilot-card[aria-pressed=true]:before{content:"";position:absolute;top:-15px;border-top:8px solid #c4ff55;border-left:7px solid transparent;border-right:7px solid transparent}.select-meta{position:absolute;top:755px;width:100%;text-align:center;font:12px monospace;color:#afc5db}.select-go{position:absolute;top:797px;left:55px;width:430px;height:68px}.select-back{position:absolute;top:895px;left:190px;width:160px;height:42px;min-height:42px;font-size:13px!important}.select-glass{position:absolute;top:491px;left:14px;right:14px;height:301px;z-index:-1;background:linear-gradient(0deg,#071429f2,#071429c9,transparent);border-radius:15px}
-#hud{position:absolute;top:0;left:0;right:0;height:204px;z-index:4;display:none;background:linear-gradient(#071327f5 0%,#08162af3 73%,#08162a00);padding:20px 22px;pointer-events:none}#hud.active{display:block}.hud-top{height:56px;display:flex;align-items:center;gap:11px}.hud-avatar{width:45px;height:48px;object-fit:contain;image-rendering:pixelated}.hud-pilot{font:700 12px/1.45 monospace;color:#b7cce6;flex:1;max-width:239px;letter-spacing:.3px}.hud-pilot strong{display:block;color:#fff;font-size:15px}.hud-actions{margin-left:auto;display:flex;gap:8px;pointer-events:auto}.hud-actions .icon-btn{width:45px;height:45px}.hud-main{display:flex;justify-content:space-between;align-items:center;margin-top:9px}.hud-score-label{font:700 10px monospace;color:#95aecb;letter-spacing:2px}.hud-score{display:block;font:900 34px "Courier New",monospace;color:#ecffc9;letter-spacing:1px;line-height:1.12}.hearts{display:flex;gap:5px}.hearts img{width:28px;height:28px;object-fit:contain;image-rendering:pixelated;transition:opacity .15s,filter .15s}.hearts img.lost{opacity:.22;filter:grayscale(1)}.collection{display:flex;gap:8px;margin-top:12px}.token{min-width:79px;height:29px;display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid #506482;background:#12213e;font:700 15px monospace;color:#8aa0ba;border-radius:5px;transition:background .2s,border .2s}.token.collected{background:#224727;border-color:#a9e453;color:#deffb8}.token .check{font-size:12px}.run-time{margin-left:auto;align-self:center;color:#c0d1e6;font:12px monospace}.boost-meter{position:absolute;top:191px;left:22px;right:22px;height:3px;background:#c1fc4a;transform-origin:left;opacity:0}.bottom-instruction{position:absolute;z-index:4;bottom:118px;left:40px;right:40px;text-align:center;color:#c2d7f3;font:12px/1.5 monospace;text-shadow:0 2px #05112c;pointer-events:none;display:none}.bottom-instruction.active{display:block}.controls{position:absolute;bottom:23px;left:22px;right:22px;z-index:4;display:none;justify-content:space-between;pointer-events:none}.controls.active{display:flex}.control-pair{display:flex;gap:15px}.control{width:67px;height:67px;border-radius:12px;border:2px solid #9fbdda77;background:#0b1b32cc;box-shadow:inset 0 -4px #0004;color:#d8eafc;pointer-events:auto;touch-action:none;display:flex;justify-content:center;align-items:center}.control svg{width:28px;height:28px;fill:currentColor}.control.held{background:#435b28;border-color:#b5fc44;color:#e5ffb5}.control.fire{width:90px;color:#c9ff65;border-color:#b1ef5266}.control.fire:after{content:"TIRO";font:9px monospace;position:absolute;bottom:6px}.control.fire svg{transform:translateY(-4px)}.auto-note{align-self:center;font:10px/1.5 monospace;text-align:right;letter-spacing:1px;color:#8da4c4;pointer-events:none}
+#hud{position:absolute;top:0;left:0;right:0;height:204px;z-index:4;display:none;background:linear-gradient(#071327f5 0%,#08162af3 73%,#08162a00);padding:20px 22px;pointer-events:none}#hud.active{display:block}.hud-top{height:56px;display:flex;align-items:center;gap:11px}.hud-avatar{width:45px;height:48px;object-fit:contain;image-rendering:pixelated}.hud-pilot{font:700 12px/1.45 monospace;color:#b7cce6;flex:1;max-width:239px;letter-spacing:.3px}.hud-pilot strong{display:block;color:#fff;font-size:15px}.hud-actions{margin-left:auto;display:flex;gap:8px;pointer-events:auto}.hud-actions .icon-btn{width:45px;height:45px}.hud-main{display:flex;justify-content:space-between;align-items:center;margin-top:9px}.hud-score-label{font:700 10px monospace;color:#95aecb;letter-spacing:2px}.hud-score{display:block;font:900 34px "Courier New",monospace;color:#ecffc9;letter-spacing:1px;line-height:1.12}.hearts{display:flex;gap:5px}.hearts img{width:28px;height:28px;object-fit:contain;image-rendering:pixelated;transition:opacity .15s,filter .15s}.hearts img.lost{opacity:.22;filter:grayscale(1)}.collection{display:flex;gap:8px;margin-top:12px}.token{min-width:79px;height:29px;display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid #506482;background:#12213e;font:700 15px monospace;color:#8aa0ba;border-radius:5px;transition:background .2s,border .2s}.token.collected{background:#224727;border-color:#a9e453;color:#deffb8}.token .check{font-size:12px}.run-time{margin-left:auto;align-self:center;color:#c0d1e6;font:12px monospace}.boost-meter{position:absolute;top:191px;left:22px;right:22px;height:3px;background:#c1fc4a;transform-origin:left;opacity:0}.controls{position:absolute;bottom:23px;left:22px;right:22px;z-index:4;display:none;justify-content:space-between;pointer-events:none}.controls.active{display:flex}.control-pair{display:flex;gap:15px}.control{width:67px;height:67px;border-radius:12px;border:2px solid #9fbdda77;background:#0b1b32cc;box-shadow:inset 0 -4px #0004;color:#d8eafc;pointer-events:auto;touch-action:none;display:flex;justify-content:center;align-items:center}.control svg{width:28px;height:28px;fill:currentColor}.control.held{background:#435b28;border-color:#b5fc44;color:#e5ffb5}.control.fire{width:90px;color:#c9ff65;border-color:#b1ef5266}.control.fire:after{content:"TIRO";font:9px monospace;position:absolute;bottom:6px}.control.fire svg{transform:translateY(-4px)}
 #pause-screen{background:#060d24ce;backdrop-filter:blur(6px);z-index:12}.pause-panel{position:absolute;left:50px;right:50px;top:229px;background:#0e1b32;border:2px solid #647897;padding:32px 27px;border-radius:15px;box-shadow:0 14px #03091680}.pause-panel h2{margin:3px 0 18px;font:900 35px monospace;letter-spacing:1px}.pause-panel p{font-size:15px;line-height:1.6;color:#b0c3dd}.pause-panel .btn{width:100%;margin-top:22px}.toggle-row{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid #2b3b52;margin-top:22px;padding-top:20px;font:700 13px monospace;line-height:1.5}.toggle{background:#24324e;border:1px solid #687590;min-width:68px;height:34px;border-radius:6px;font:700 12px monospace}.toggle.on{background:#395c2d;color:#deffb1;border-color:#9bda53}.pause-help{font-size:12px!important;color:#91a8c6!important;margin-bottom:0}.pause-exit{display:block;margin:27px auto 0;background:none;border:none;color:#9fb0cb;font:13px monospace;text-decoration:underline;text-underline-offset:5px}
 .result-logo{top:29px;width:293px;height:150px}.result-title{position:absolute;top:202px;width:100%;margin:0;text-align:center;font:900 36px monospace;letter-spacing:1px;color:#e4ff97;text-shadow:0 4px #20364a}.result-sub{position:absolute;top:254px;width:100%;text-align:center;margin:0;color:#d3e7f9;font-size:15px}.result-panel{position:absolute;top:536px;left:37px;right:37px;height:142px;border:2px solid #8291c6;background:#091a39f5;border-radius:13px;box-shadow:0 7px #030a1a;text-align:center;padding:16px}.result-panel .label{font:700 12px monospace;letter-spacing:2px;color:#a6bbd8}.result-score{font:900 60px/1.1 "Courier New",monospace;color:#e5ff94;letter-spacing:1px;margin:7px 0 2px}.result-record{font:700 12px monospace;color:#a8cce4}.result-record.is-record{color:#c6fb5d}.result-tokens{position:absolute;top:694px;left:37px;right:37px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.result-token{height:86px;background:#0b193be8;border:1px solid #637797;border-radius:9px;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:8px;opacity:.55}.result-token strong{font:900 25px monospace;color:#ebf4ff}.result-token span{font:10px monospace;color:#a8bddb}.result-token.got{opacity:1;border-color:#9adf48;background:#24421bdd}.result-token.got strong,.result-token.got span{color:#ddffb5}.result-again{position:absolute;top:805px;left:37px;right:37px;height:66px}.result-actions{position:absolute;top:889px;left:37px;right:37px;display:flex;gap:12px}.result-actions button{flex:1;min-height:43px;font-size:12px!important}.result-actions svg{width:17px;height:17px}#toast{position:absolute;z-index:20;left:30px;right:30px;bottom:120px;padding:13px 15px;color:#e6ffe8;background:#152c25;border:1px solid #91df6a;text-align:center;border-radius:9px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}#toast.show{opacity:1}
 #loading{position:absolute;inset:0;z-index:30;background:#080f26;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:22px;font:700 16px monospace;color:#b9fa54}#loading.hidden{display:none}.loading-bar{width:215px;height:6px;background:#253249}.loading-fill{height:100%;background:#b5fc44;width:0;transition:width .2s}#error{color:#ffc1c1;padding:30px;text-align:center;line-height:1.6;display:none}
@@ -75,33 +75,42 @@
   transition: opacity .2s;
 }
 
+
+/* Final polish: grounded menus, spare copy and a fixed 60-second mission. */
+.mission-clock{text-align:right;min-width:122px}
+.mission-clock>span{display:block;font:700 10px monospace;letter-spacing:2px;color:#a8c3df}
+.mission-clock>strong{display:block;font:900 34px/1.12 "Courier New",monospace;letter-spacing:1px;color:#e8f7ff}
+.mission-clock.urgent>strong{color:#ffd46d}
+.meteor-stat{margin-left:auto;min-width:78px;align-self:center;text-align:right;display:flex;flex-direction:column;gap:3px}
+.meteor-stat>span{font:700 8px monospace;letter-spacing:1px;color:#a8c3df}
+.meteor-stat>strong{font:900 18px/1 monospace;color:#e8f7ff}
+.result-title{top:198px;font-size:31px}
+.result-sub{top:244px;font-size:14px}
+.select-hint{font-size:15px}
+
 </style>
 </head>
 <body>
 <div id="app">
 <aside class="desktop-note">
- <div class="overline">TIME SERRA / ARCADE</div>
+ <div class="overline">TIME SERRA</div>
  <h1>Pronto<br>para<br><span>decolar?</span></h1>
- <p>Escolha seu piloto. Desvie dos meteoros. Complete o trio e tente superar seu recorde.</p>
+ <p>Uma miss&atilde;o de 60 segundos. Quantos meteoros voc&ecirc; consegue destruir?</p>
  <div class="line"></div>
  <div class="key-line"><kbd>&larr;</kbd><kbd>&rarr;</kbd><span>ou A / D para pilotar</span></div>
  <div class="key-line"><kbd>ESP</kbd><span>para atirar</span></div>
  <div class="key-line"><kbd>P</kbd><span>para pausar</span></div>
- <p>No celular, arraste o dedo.<br>O tiro autom&aacute;tico j&aacute; vem ligado.</p>
+ 
  <p class="note-small">5 PILOTOS. UMA EQUIPE.<br>Recorde salvo apenas neste navegador.<br>Sem cadastro. Sem coleta de dados.</p>
 </aside>
 <div id="viewport"><main id="stage" aria-label="Jogo Time Serra">
  <canvas id="world" width="1080" height="1920" aria-label="Campo de jogo. Use as setas ou arraste para pilotar."></canvas>
  <div class="scanlines" aria-hidden="true"></div>
  <section id="home-screen" class="screen active" aria-label="In&iacute;cio">
-  <span class="version">TIME SERRA / FINAL</span>
   <button class="icon-btn menu-sound" data-action="sound" aria-label="Ligar som"></button>
   <img class="logo home-logo" data-asset="logo" alt="Time Serra">
   <h2 class="tagline">A SERRA VAI MAIS ALTO.</h2>
-  <p class="home-desc">Desvie, atire e complete o seu time.</p>
-  <div class="home-pilot">PRONTO PARA DECOLAR<strong>Serginho Vidigal</strong></div>
   <button class="btn home-play" id="play-btn"><span data-icon="play"></span>JOGAR</button>
-  <div class="home-footer">ARRASTE PARA PILOTAR &middot; TIRO AUTOM&Aacute;TICO</div>
  </section>
  <section id="select-screen" class="screen" aria-label="Escolha de piloto">
   <div class="select-glass"></div>
@@ -110,25 +119,24 @@
   <h3 class="select-name" id="selected-name">Serginho Vidigal</h3>
   <div class="select-hint" id="selected-hint">Pronto para a miss&atilde;o.</div>
   <div class="pilot-row" id="pilot-row" aria-label="Pilotos dispon&iacute;veis"></div>
-  <div class="select-meta">5 pilotos. A mesma velocidade e pot&ecirc;ncia.</div>
+  <div class="select-meta">Miss&atilde;o de 60 segundos para todos os pilotos.</div>
   <button class="btn select-go" id="launch-btn"><span data-icon="play"></span>DECOLAR</button>
   <button class="btn ghost select-back" id="back-btn">VOLTAR</button>
  </section>
  <div id="hud" aria-label="Placar">
   <div class="hud-top"><img class="hud-avatar" id="hud-avatar" alt="Piloto"><div class="hud-pilot">PILOTO<strong id="hud-name"></strong></div><div class="hud-actions"><button class="icon-btn" data-action="sound" aria-label="Ligar som"></button><button class="icon-btn" id="pause-btn" aria-label="Pausar jogo"><span data-icon="pause"></span></button></div></div>
-  <div class="hud-main"><div><span class="hud-score-label">PONTOS</span><strong class="hud-score" id="score">000000</strong></div><div class="hearts" id="hearts"><img data-asset="heart" alt="Vida 1"><img data-asset="heart" alt="Vida 2"><img data-asset="heart" alt="Vida 3"></div></div>
-  <div class="collection" id="collection"><div class="token" data-number="2026">20 26<span class="check"></span></div><div class="token" data-number="15">15<span class="check"></span></div><div class="token" data-number="400">400<span class="check"></span></div><span class="run-time" id="run-time">00:00</span></div>
+  <div class="hud-main"><div><span class="hud-score-label">PONTOS</span><strong class="hud-score" id="score">000000</strong></div><div class="mission-clock" id="mission-clock" role="timer" aria-label="Tempo restante: 60 segundos"><span>TEMPO</span><strong id="mission-time">01:00</strong></div></div>
+  <div class="collection" id="collection"><div class="token" data-number="2026">20 26<span class="check"></span></div><div class="token" data-number="15">15<span class="check"></span></div><div class="token" data-number="400">400<span class="check"></span></div><span class="meteor-stat"><span>METEOROS</span><strong id="destroyed-count">0</strong></span></div>
   <div class="boost-meter" id="boost-meter"></div>
  </div>
- <div id="instruction" class="bottom-instruction">Arraste para pilotar. O foguete atira sozinho.</div>
- <div id="controls" class="controls"><div class="control-pair"><button class="control" id="left-btn" aria-label="Mover para a esquerda"><span data-icon="left"></span></button><button class="control" id="right-btn" aria-label="Mover para a direita"><span data-icon="right"></span></button></div><div class="auto-note" id="auto-note">TIRO<br>AUTOM&Aacute;TICO</div><button class="control fire" id="fire-btn" aria-label="Atirar"><span data-icon="target"></span></button></div>
+ <div id="controls" class="controls"><div class="control-pair"><button class="control" id="left-btn" aria-label="Mover para a esquerda"><span data-icon="left"></span></button><button class="control" id="right-btn" aria-label="Mover para a direita"><span data-icon="right"></span></button></div><button class="control fire" id="fire-btn" aria-label="Atirar"><span data-icon="target"></span></button></div>
  <section id="pause-screen" class="screen" aria-label="Jogo pausado">
-  <div class="pause-panel"><div class="overline">TIME SERRA / PAUSA</div><h2>RESPIRA.</h2><p>A miss&atilde;o espera por voc&ecirc;.</p><button class="btn" id="resume-btn"><span data-icon="play"></span>CONTINUAR</button><div class="toggle-row"><span>TIRO AUTOM&Aacute;TICO</span><button class="toggle on" id="auto-toggle" aria-pressed="true">LIGADO</button></div><div class="toggle-row"><span>SOM DO JOGO</span><button class="toggle" id="sound-toggle" aria-pressed="false">MUDO</button></div><div class="volume-row"><label for="effects-volume">EFEITOS</label><input type="range" id="effects-volume" min="0" max="100" value="65" aria-label="Volume dos efeitos sonoros"><output id="effects-value">65%</output></div>
+  <div class="pause-panel"><div class="overline">PAUSA</div><h2>RESPIRA.</h2><p>A miss&atilde;o espera por voc&ecirc;.</p><button class="btn" id="resume-btn"><span data-icon="play"></span>CONTINUAR</button><div class="toggle-row"><span>TIRO AUTOM&Aacute;TICO</span><button class="toggle on" id="auto-toggle" aria-pressed="true">LIGADO</button></div><div class="toggle-row"><span>SOM DO JOGO</span><button class="toggle" id="sound-toggle" aria-pressed="false">MUDO</button></div><div class="volume-row"><label for="effects-volume">EFEITOS</label><input type="range" id="effects-volume" min="0" max="100" value="65" aria-label="Volume dos efeitos sonoros"><output id="effects-value">65%</output></div>
 <div class="music-panel"><div class="music-heading">TRILHA OFICIAL <span>LOOP</span></div><div id="music-status">Trilha oficial incorporada.</div><button id="music-load-btn" class="music-load" type="button">TROCAR &Aacute;UDIO</button><input type="file" id="music-file" accept="audio/*,.mp3,.wav,.ogg,.m4a,.aac,.flac" hidden><div class="volume-row"><label for="music-volume">M&Uacute;SICA</label><input type="range" id="music-volume" min="0" max="100" value="30" aria-label="Volume da trilha"><output id="music-value">30%</output></div><p class="music-note">Trilha incorporada ao jogo. Toca em loop e acompanha a pausa.</p></div><p class="pause-help">Arraste o dedo, use as setas ou A/D.<br>Espa&ccedil;o: atirar &middot; P ou Esc: pausa</p><button class="pause-exit" id="exit-btn">Sair desta partida</button></div>
  </section>
  <section id="result-screen" class="screen" aria-label="Resultado da partida">
   <img class="logo result-logo" data-asset="logo" alt="Time Serra">
-  <h2 class="result-title">FIM DE JOGO</h2><p class="result-sub" id="result-sub">Uma equipe. Sempre em frente.</p>
+  <h2 class="result-title">MISS&Atilde;O CONCLU&Iacute;DA</h2><p class="result-sub" id="result-sub">60 segundos de miss&atilde;o.</p>
   <div class="result-panel"><div class="label">SUA PONTUA&Ccedil;&Atilde;O</div><div class="result-score" id="result-score">0</div><div class="result-record" id="result-record"></div></div>
   <div class="result-tokens" id="result-tokens"></div>
   <button class="btn result-again" id="again-btn"><span data-icon="replay"></span>JOGAR NOVAMENTE</button>
@@ -156,7 +164,8 @@ const CONFIG = Object.freeze({
   moveSpeed: 485,             // Horizontal movement in logical pixels / second.
   fireInterval: .23,          // Time between shots.
   bulletSpeed: 900,
-  startLives: 3,
+  missionSeconds: 60,        // Same active play time for every pilot.
+  impactPause: .65,          // A hit briefly interrupts fire, not the mission.
   invulnerability: 1.65,
   firstSpecialDelay: .05,     // The first obstacle reveals 20 26.
   specialDelay: 2.4,         // Next special only after the previous one is hit.
@@ -169,11 +178,11 @@ const CONFIG = Object.freeze({
   points: {small:10, medium:20, large:30, special:20}
 });
 const PILOTS = [
- {id:'sergio', name:'S\u00e9rgio Vidigal', lines:['S\u00e9rgio','Vidigal'], original:1},
- {id:'casagrande', name:'Casagrande', lines:['Casagrande'], original:5},
- {id:'serginho', name:'Serginho Vidigal', lines:['Serginho','Vidigal'], original:2},
- {id:'ricardo', name:'Ricardo Ferra\u00e7o', lines:['Ricardo','Ferra\u00e7o'], original:4},
- {id:'weverson', name:'Weverson Meirelles', lines:['Weverson','Meirelles'], original:3}
+ {id:'sergio', role:"", name:'S\u00e9rgio Vidigal', lines:['S\u00e9rgio','Vidigal'], original:1},
+ {id:'casagrande', role:"Senador", name:'Casagrande', lines:['Casagrande'], original:5},
+ {id:'serginho', role:"Deputado federal", name:'Serginho Vidigal', lines:['Serginho','Vidigal'], original:2},
+ {id:'ricardo', role:"Governador", name:'Ricardo Ferra\u00e7o', lines:['Ricardo','Ferra\u00e7o'], original:4},
+ {id:'weverson', role:"Prefeito", name:'Weverson Meirelles', lines:['Weverson','Meirelles'], original:3}
 ];
 const NUMBERS = ['2026','15','400'];
 // Internal keys remain stable; every player-facing display uses this label.
@@ -206,10 +215,10 @@ const rand = (lo,hi) => lo+Math.random()*(hi-lo);
 const timeLabel = t => `${String(Math.floor(t/60)).padStart(2,'0')}:${String(Math.floor(t)%60).padStart(2,'0')}`;
 let ready=false, mode='loading', selected=2, visualTime=0, lastTime=0, uiTime=0;
 let autoFire=true, toastTimer=0, resultStart=0, lastResult=null, best=0;
-try {best=Math.max(0,Number(localStorage.getItem('time-serra-best-v1'))||0);}catch(_){ }
+try {best=Math.max(0,Number(localStorage.getItem('time-serra-best-60s-v1'))||0);}catch(_){ }
 const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const input={keys:new Set(),left:new Set(),right:new Set(),fire:new Set(),drag:null,target:null};
-const g={time:0,countdown:3,score:0,lives:3,spawnTimer:1.5,spawnCount:0,specialIndex:0,specialTimer:CONFIG.firstSpecialDelay,
+const g={time:0,countdown:3,score:0,hits:0,stun:0,spawnTimer:1.5,spawnCount:0,specialIndex:0,specialTimer:CONFIG.firstSpecialDelay,
  bullets:[],meteors:[],particles:[],bursts:[],popups:[],tokens:[],confetti:[],
  collected:new Set(),invulnerable:0,boost:0,trioComplete:false,destroyed:0,shake:0,
  notice:null,noticeTime:0,queuedNotice:null,stageNotice:0,player:{x:W/2,y:746,tilt:0,fireTimer:0}};
@@ -364,26 +373,24 @@ document.addEventListener('pointerdown',()=>{if(ready)audio.unlock();},{capture:
 document.addEventListener('keydown',()=>{if(ready)audio.unlock();},{capture:true});
 function syncAuto(){
  $('auto-toggle').textContent=autoFire?'LIGADO':'DESLIGADO';$('auto-toggle').classList.toggle('on',autoFire);$('auto-toggle').setAttribute('aria-pressed',String(autoFire));
- $('fire-btn').style.display=autoFire?'none':'flex';$('auto-note').style.display=autoFire?'block':'none';
- $('instruction').textContent=autoFire?'Arraste para pilotar. O foguete atira sozinho.':'Arraste para pilotar. Segure TIRO ou Espa\u00e7o para atirar.';
+ $('fire-btn').style.display=autoFire?'none':'flex';
 }
 function showToast(text){$('toast').textContent=text;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2600);}
 function clearInput(){input.keys.clear();input.left.clear();input.right.clear();input.fire.clear();input.drag=null;input.target=null;document.querySelectorAll('.control.held').forEach(e=>e.classList.remove('held'));}
 function setMode(next){
- clearInput();mode=next;audio.apply();music.sync();
+ clearInput();mode=next;lastTime=performance.now();audio.apply();music.sync();
  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
  const screen={home:'home-screen',select:'select-screen',paused:'pause-screen',result:'result-screen'}[next];
  if(screen)$(screen).classList.add('active');
  const live=['playing','countdown','paused'].includes(next);
  $('hud').classList.toggle('active',live);
  $('controls').classList.toggle('active',next==='playing'||next==='countdown');
- $('instruction').classList.toggle('active',next==='playing'&&g.time<7);
  canvas.setAttribute('aria-label',live?'Jogo em andamento. Setas ou arraste para pilotar.':'Cen\u00e1rio animado do Time Serra');
 }
 function selectPilot(index){
  selected=(index+PILOTS.length)%PILOTS.length;const p=PILOTS[selected];
  $('selected-name').textContent=p.name;
- $('selected-hint').textContent=selected===2?'Piloto principal. Pronto para a miss\u00e3o.':'Pronto para a miss\u00e3o.';
+ $('selected-hint').textContent=(p.role?p.role+' \u00b7 ':'')+'Pronto para a miss\u00e3o.';
  document.querySelectorAll('.pilot-card').forEach((el,i)=>el.setAttribute('aria-pressed',String(i===selected)));
  $('hud-name').textContent=p.name;$('hud-avatar').src=ASSET_DATA['portrait-'+p.id];
  if(ready)audio.click();
@@ -398,7 +405,7 @@ function buildPilots(){
 }
 function startRun(){
  if(!ready)return;
- Object.assign(g,{time:0,countdown:3,score:0,lives:CONFIG.startLives,spawnTimer:1.5,spawnCount:0,specialIndex:0,specialTimer:CONFIG.firstSpecialDelay,
+ Object.assign(g,{time:0,countdown:3,score:0,hits:0,stun:0,spawnTimer:1.5,spawnCount:0,specialIndex:0,specialTimer:CONFIG.firstSpecialDelay,
  bullets:[],meteors:[],particles:[],bursts:[],popups:[],tokens:[],confetti:[],collected:new Set(),
  invulnerable:0,boost:0,trioComplete:false,destroyed:0,shake:0,notice:null,noticeTime:0,queuedNotice:null,stageNotice:0,
  player:{x:W/2,y:746,tilt:0,fireTimer:.08}});
@@ -411,10 +418,10 @@ function resume(){if(mode==='paused'){setMode(pausedFrom);audio.unlock();}}
 function finishRun(){
  if(mode==='result')return;
  const oldBest=best;best=Math.max(best,g.score);
- try{localStorage.setItem('time-serra-best-v1',String(best));}catch(_){ }
- lastResult={score:g.score,time:g.time,destroyed:g.destroyed,collected:[...g.collected],pilot:selected,best,newRecord:g.score>oldBest};
+ try{localStorage.setItem('time-serra-best-60s-v1',String(best));}catch(_){ }
+ lastResult={score:g.score,time:g.time,destroyed:g.destroyed,hits:g.hits,collected:[...g.collected],pilot:selected,best,newRecord:g.score>oldBest};
  resultStart=visualTime;
- $('result-sub').textContent=`${g.destroyed} meteoros destru\u00eddos \u00b7 ${timeLabel(g.time)} de miss\u00e3o`;
+ $('result-sub').textContent=`${g.destroyed} ${g.destroyed===1?'meteoro destru\u00eddo':'meteoros destru\u00eddos'} \u00b7 ${Math.round(g.time)} segundos`;
  $('result-score').textContent='0';
  $('result-record').textContent=lastResult.newRecord?'NOVO RECORDE NESTE NAVEGADOR!':`SEU RECORDE: ${fmt(best)} PONTOS`;
  $('result-record').classList.toggle('is-record',lastResult.newRecord);
@@ -502,16 +509,16 @@ function drawScenery(c=ctx,scene=mode,elapsed=g.time){
 function drawGroundedTeam(top,width,c=ctx){
  const art=img.team;if(!art)return;
  const x=(W-width)/2,h=width*art.height/art.width;
- const footY=Math.round(top+h-1);
- // Cover the distant rail with a walkable surface behind the shoes.
- c.save();c.fillStyle='#617078';c.fillRect(0,footY-14,W,29);
- c.fillStyle='#748087';c.fillRect(0,footY-14,W,3);
- c.fillStyle='#45545f';c.fillRect(0,footY+15,W,19);
- c.fillStyle='#293f4b';c.fillRect(0,footY+31,W,5);
- c.fillStyle='#879299';c.fillRect(0,footY+15,W,2);
- c.fillStyle='#4d5e68';
- for(let i=0;i<7;i++){const bx=i*87-10;c.fillRect(bx,footY-10,2,24);c.fillRect(bx+40,footY+19,2,11);}
- // Two small pixel shadows per person, taken from the original shoe positions.
+ const footY=Math.round(top+h-1),surfaceY=footY-14,faceY=footY+15;
+ c.save();
+ // Solid, fully opaque ground all the way to the bottom: never a floating ledge.
+ c.fillStyle='#172638';c.fillRect(0,faceY,W,H-faceY);
+ c.fillStyle='#617078';c.fillRect(0,surfaceY,W,29);
+ c.fillStyle='#7b888e';c.fillRect(0,surfaceY,W,3);
+ c.fillStyle='#374b5c';c.fillRect(0,faceY,W,8);
+ c.fillStyle='#8b969b';c.fillRect(0,faceY,W,2);
+ c.fillStyle='#53646e';
+ for(let i=0;i<7;i++){const bx=i*87-10;c.fillRect(bx,footY-10,2,24);}
  const soles=[.032,.151,.247,.344,.409,.558,.635,.743,.826,.956];
  for(const n of soles){const cx=x+width*n;c.fillStyle='#0c1729aa';c.fillRect(Math.round(cx-18),footY-2,36,4);c.fillRect(Math.round(cx-13),footY+2,26,2);}
  drawImage('team',x,top,width,h,1,c);c.restore();
@@ -519,7 +526,7 @@ function drawGroundedTeam(top,width,c=ctx){
 function drawMenus(){
  if(mode==='home'){
    drawShip(PILOTS[2].id,W/2,425,80,visualTime,reducedMotion?0:Math.sin(visualTime*1.25)*.028);
-   drawGroundedTeam(595,490);
+   drawGroundedTeam(560,490);
  }else if(mode==='select'){
    // Selection brackets pulse independently of the ship and its cockpit portrait.
    const pulse=reducedMotion?1:.7+.3*Math.sin(visualTime*3);const cy=355;
@@ -528,7 +535,7 @@ function drawMenus(){
    ctx.beginPath();for(const [sx,sy,dx,dy] of [[x,y,1,1],[x+w,y,-1,1],[x,y+h,1,-1],[x+w,y+h,-1,-1]]){ctx.moveTo(sx+dx*k,sy);ctx.lineTo(sx,sy);ctx.lineTo(sx,sy+dy*k);}ctx.stroke();ctx.restore();
    drawShip(PILOTS[selected].id,W/2,cy+(reducedMotion?0:Math.sin(visualTime*2)*5),116,visualTime);
  }else if(mode==='result'){
-   drawGroundedTeam(298,504);
+   drawGroundedTeam(275,504);
    for(const cf of g.confetti){ctx.save();ctx.translate(cf.x,cf.y);ctx.rotate(cf.r);ctx.fillStyle=cf.color;ctx.fillRect(-cf.s/2,-cf.s/2,cf.s,cf.s*.6);ctx.restore();}
  }
 }
@@ -585,9 +592,10 @@ function destroyMeteor(m){
 }
 function takeDamage(m){
  if(g.invulnerable>0||mode!=='playing')return;
- retireMeteor(m);g.lives--;g.invulnerable=CONFIG.invulnerability;g.shake=reducedMotion?0:9;
- particleBurst(g.player.x,g.player.y,28,'#72e3ff');audio.damage();
- updateHUD();if(g.lives<=0)finishRun();
+ retireMeteor(m);g.hits++;g.stun=CONFIG.impactPause;
+ g.player.fireTimer=Math.max(g.player.fireTimer,CONFIG.impactPause);
+ g.invulnerable=CONFIG.invulnerability;g.shake=reducedMotion?0:9;
+ particleBurst(g.player.x,g.player.y,28,'#72e3ff');audio.damage();updateHUD();
 }
 function updateEffects(dt){
  for(const p of g.particles){p.life-=dt;p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=55*dt;p.vx*=Math.exp(-dt*1.9);}
@@ -598,15 +606,19 @@ function updateEffects(dt){
  g.shake=Math.max(0,g.shake-dt*29);g.noticeTime=Math.max(0,g.noticeTime-dt);
  if(g.queuedNotice){g.queuedNotice.delay-=dt;if(g.queuedNotice.delay<=0){notice(g.queuedNotice.text);g.queuedNotice=null;}}
 }
-function updateGame(dt){
+function updateGame(dt,clockDt=dt){
  if(mode==='countdown'){
-  g.countdown-=dt;const count=Math.ceil(g.countdown);
+  g.countdown-=clockDt;const count=Math.ceil(g.countdown);
   if(count>0&&count!==lastCountdown){audio.tone(440,.11,.025);lastCountdown=count;}
   if(g.countdown<=0){setMode('playing');notice('VAMOS DECOLAR!');spawnMeteor('special');audio.launch();}
   return;
  }
  if(mode!=='playing')return;
- g.time+=dt;g.invulnerable=Math.max(0,g.invulnerable-dt);g.boost=Math.max(0,g.boost-dt);
+ const remaining=Math.max(0,CONFIG.missionSeconds-g.time);
+ if(remaining<=1e-8){g.time=CONFIG.missionSeconds;updateHUD();finishRun();return;}
+ const clockStep=Math.min(Math.max(0,clockDt),remaining);
+ dt=Math.min(dt,clockStep);g.time=Math.min(CONFIG.missionSeconds,g.time+clockStep);
+ g.invulnerable=Math.max(0,g.invulnerable-dt);g.boost=Math.max(0,g.boost-dt);g.stun=Math.max(0,g.stun-dt);
  const p=g.player;
  const left=input.keys.has('ArrowLeft')||input.keys.has('KeyA')||input.left.size>0;
  const right=input.keys.has('ArrowRight')||input.keys.has('KeyD')||input.right.size>0;
@@ -615,7 +627,7 @@ function updateGame(dt){
  else if(input.target!=null){p.x+=clamp(input.target-p.x,-CONFIG.moveSpeed*dt,CONFIG.moveSpeed*dt);}
  p.x=clamp(p.x,47,W-47);p.tilt=lerp(p.tilt,clamp((p.x-oldX)*.01,-.075,.075),Math.min(dt*13,1));
  p.fireTimer-=dt;
- if((autoFire||input.fire.size||input.keys.has('Space'))&&p.fireTimer<=0){shoot();p.fireTimer=g.boost>0?.17:CONFIG.fireInterval;}
+ if(g.stun<=0&&(autoFire||input.fire.size||input.keys.has('Space'))&&p.fireTimer<=0){shoot();p.fireTimer=g.boost>0?.17:CONFIG.fireInterval;}
  for(const b of g.bullets){b.previousY=b.y;b.y-=CONFIG.bulletSpeed*dt;if(b.y<-35)b.dead=true;}
  if(!g.meteors.some(m=>m.special&&!m.dead)){
   g.specialTimer-=dt;if(g.specialTimer<=0)spawnMeteor('special');
@@ -630,15 +642,15 @@ function updateGame(dt){
  g.bullets=g.bullets.filter(b=>!b.dead);g.meteors=g.meteors.filter(m=>!m.dead);
  updateEffects(dt);
  if(g.time>=30&&g.stageNotice===0){g.stageNotice=1;notice('VELOCIDADE +');}
- if(g.time>=60&&g.stageNotice===1){g.stageNotice=2;notice('BORA MAIS ALTO!');}
+ if(g.time>=CONFIG.missionSeconds-1e-8){g.time=CONFIG.missionSeconds;updateHUD();finishRun();}
 }
-function update(dt){
+function update(dt,clockDt=dt){
  if(mode==='paused'||!ready)return;
  visualTime+=dt;
  const starSpeed=mode==='playing'?(g.boost>0?210:55)+g.time*.4:8;
  for(const s of stars){s.y+=starSpeed*s.depth*dt;if(s.y>H+5){s.y=-8;s.x=rand(0,W);}}
  if(mode==='home'||mode==='select'){for(const cl of clouds){cl.y+=dt*5*cl.depth;if(cl.y>H+90)cl.y=-100;}}
- updateGame(dt);
+ updateGame(dt,clockDt);
  if(mode==='result'){
   for(const cf of g.confetti){cf.x+=cf.vx*dt;cf.y+=cf.vy*dt;cf.r+=dt;if(cf.y>H+10){cf.y=rand(-90,-10);cf.x=rand(0,W);}}
   if(lastResult){const t=clamp((visualTime-resultStart)/.85,0,1);$('result-score').textContent=fmt(lastResult.score*(1-(1-t)**3));}
@@ -646,12 +658,14 @@ function update(dt){
  uiTime+=dt;if(uiTime>=.08){updateHUD();uiTime=0;}
 }
 function updateHUD(){
- $('score').textContent=String(g.score).padStart(6,'0');$('run-time').textContent=timeLabel(g.time);
- [...$('hearts').children].forEach((el,i)=>{el.classList.toggle('lost',i>=g.lives);el.alt=i<g.lives?'Vida dispon\u00edvel':'Vida perdida';});
- $('hearts').setAttribute('aria-label',g.lives+' vidas');
+ $('score').textContent=String(g.score).padStart(6,'0');
+ const seconds=Math.max(0,Math.ceil(CONFIG.missionSeconds-g.time));
+ $('mission-time').textContent=timeLabel(seconds);
+ $('mission-clock').classList.toggle('urgent',seconds<=10&&seconds>0);
+ $('mission-clock').setAttribute('aria-label','Tempo restante: '+seconds+' segundos');
+ $('destroyed-count').textContent=String(g.destroyed);
  document.querySelectorAll('.token').forEach(el=>{const got=g.collected.has(el.dataset.number);el.classList.toggle('collected',got);el.classList.toggle('next',el.dataset.number===NUMBERS[g.specialIndex%NUMBERS.length]);el.querySelector('.check').textContent=got?'\u2713':'';});
  $('boost-meter').style.opacity=g.boost>0?'1':'0';$('boost-meter').style.transform=`scaleX(${g.boost/CONFIG.turboSeconds})`;
- $('instruction').classList.toggle('active',mode==='playing'&&g.time<7);
 }
 function drawEffects(){
  for(const b of g.bursts){const t=1-b.life/b.maxLife;const s=b.size*(.4+t*1.5);drawImage('explosion-large',b.x-s/2,b.y-s/2,s,s,(1-t)*.95);}
@@ -689,8 +703,9 @@ function draw(){
  if(['playing','countdown','paused'].includes(mode))drawGame();else drawMenus();
 }
 function loop(now){
- const dt=lastTime?Math.min((now-lastTime)/1000,.04):0;lastTime=now;
- if(ready){update(dt);draw();}
+ const elapsed=lastTime?Math.max(0,(now-lastTime)/1000):0;lastTime=now;
+ // The mission clock uses elapsed time; simulation remains capped on slow frames.
+ if(ready){update(Math.min(elapsed,.04),elapsed);draw();}
  requestAnimationFrame(loop);
 }
 
@@ -746,13 +761,13 @@ function scoreCard(){
  try{
  const out=document.createElement('canvas');out.width=1080;out.height=1920;const c=out.getContext('2d');c.scale(2,2);c.imageSmoothingEnabled=false;
  drawScenery(c,'result',0);drawImage('logo',122,35,296,null,1,c);
- c.textAlign='center';c.fillStyle='#e8ffc1';c.font='900 33px monospace';c.fillText('TIME SERRA',270,221);
- c.fillStyle='#bedaf1';c.font='16px Arial';c.fillText('Eu entrei nessa miss\u00e3o!',270,259);
- drawGroundedTeam(297,504,c);
+ c.textAlign='center';c.fillStyle='#e8ffc1';c.font='900 33px monospace';c.fillText('MISS\u00c3O CONCLU\u00cdDA',270,221);
+ c.fillStyle='#bedaf1';c.font='16px Arial';c.fillText('60 segundos. Uma equipe.',270,252);
+ drawGroundedTeam(275,504,c);
  c.fillStyle='#091a39f5';c.fillRect(35,543,470,159);c.strokeStyle='#b5eb6a';c.lineWidth=2;c.strokeRect(35,543,470,159);
  c.fillStyle='#d0e3fa';c.font='700 14px monospace';c.fillText('MINHA PONTUA\u00c7\u00c3O',270,575);
  c.fillStyle='#e5ff94';c.font='900 65px monospace';c.fillText(fmt(lastResult.score),270,647);
- c.fillStyle='#bacbe4';c.font='13px monospace';c.fillText(`${lastResult.destroyed} meteoros  /  ${timeLabel(lastResult.time)}`,270,680);
+ c.fillStyle='#bacbe4';c.font='13px monospace';c.fillText(`${lastResult.destroyed} meteoros destru\u00eddos  /  ${Math.round(lastResult.time)} segundos`,270,680);
  for(let i=0;i<3;i++){
   const n=NUMBERS[i],x=39+i*158,got=lastResult.collected.includes(n);
   c.save();c.globalAlpha=got?1:.5;drawNumberArt(n,x+73.5,765,28,136,79,c);c.restore();
@@ -780,11 +795,11 @@ async function preload(){
  }catch(e){$('error').style.display='block';$('error').textContent='N\u00e3o foi poss\u00edvel carregar uma imagem. Reabra o arquivo HTML completo.';console.error('Asset loading:',e);}
 }
 // Read-only snapshot supports inspection without a server or external telemetry.
-window.TimeSerra=Object.freeze({version:'final-sem-box',snapshot:()=>({ready,mode,pilot:PILOTS[selected].name,score:g.score,lives:g.lives,time:g.time,collected:[...g.collected],bullets:g.bullets.length,meteors:g.meteors.length,playerX:g.player.x,boost:g.boost,best,nextSpecial:numberLabel(NUMBERS[g.specialIndex]),sound:audio.enabled,musicLoaded:music.loaded,musicLoop:music.element.loop,musicPlaying:!music.element.paused,musicTitle:music.name})});
+window.TimeSerra=Object.freeze({version:'final-missao-60s',snapshot:()=>({ready,mode,pilot:PILOTS[selected].name,score:g.score,hits:g.hits,destroyed:g.destroyed,time:g.time,remaining:Math.max(0,CONFIG.missionSeconds-g.time),missionSeconds:CONFIG.missionSeconds,collected:[...g.collected],bullets:g.bullets.length,meteors:g.meteors.length,playerX:g.player.x,boost:g.boost,best,nextSpecial:numberLabel(NUMBERS[g.specialIndex]),sound:audio.enabled,musicLoaded:music.loaded,musicLoop:music.element.loop,musicPlaying:!music.element.paused,musicTitle:music.name})});
 // Deliberately opt-in QA helpers; absent from normal play. Scores are local only.
 if(new URLSearchParams(location.search).has('test')){
  window.TimeSerraQA={spawn:(type,o)=>spawnMeteor(type,o),step:secs=>{for(let t=0;t<secs;t+=1/60)update(Math.min(1/60,secs-t));updateHUD();draw();},
-  end:finishRun,hit:()=>{g.invulnerable=0;takeDamage({dead:false});},
+  tick:(dt,elapsed)=>{update(dt,elapsed);updateHUD();draw();},end:finishRun,hit:()=>{g.invulnerable=0;takeDamage({dead:false});},
   clear:()=>{g.meteors=[];g.bullets=[];g.specialTimer=CONFIG.firstSpecialDelay;},inspect:()=>({mode,selected,autoFire,g:{...g,collected:[...g.collected]},loaded:Object.keys(img).length,audio:{enabled:audio.enabled,state:audio.context?.state,stats:{...audio.stats},masterGain:audio.master?.gain.value},music:{loop:music.element.loop,paused:music.element.paused,loaded:music.loaded,currentTime:music.element.currentTime,volume:music.volume,gain:music.gain?.gain.value,duration:music.element.duration,name:music.name}}),
   destroy:id=>{const m=g.meteors.find(m=>!m.dead&&(!id||m.special===id));if(m)destroyMeteor(m);},
   draw:draw,scenery:drawScenery,
