@@ -1,0 +1,8 @@
+TIME SERRA - FINAL SEM BOX
+
+Extraia o ZIP e abra index.html no navegador.
+As imagens e a musica ja estao incorporadas no HTML.
+Clique em JOGAR para liberar o audio. A trilha toca em loop.
+
+Alteracao: removidos os boxes extras dos numeros no jogo,
+no painel e no resultado exportado. PNGs originais preservados.
